@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+:root {
+    --blue: hsl(240, 88%, 60%);
+    --gray: rgb(139, 138, 138);
+    --black: #1f1e1e;
+    --white: #fff;
+    --lightgray: #f9f9f9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sign-up button {
+    padding: 8px 16px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.login-container h1 {
+    margin-top: 0;
+}
+
+.login-container h3 {
+    color: var(--gray);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: inline;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.bottom {
+    display: inline-flex;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image img {
+        width: 80%;
+        margin: auto;
+    }
+}
